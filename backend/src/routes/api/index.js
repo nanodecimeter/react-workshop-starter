@@ -22,12 +22,7 @@ router.get("/contacts", async (req, res) => {
  */
 router.post("/contacts", async (req, res) => {
   try {
-    // Fetch a photo from an API
-    const photoResponse = await fetch("https://randomuser.me/api/?results=1");
-    const data = await photoResponse.json();
-    const photoUrl = data.results[0].picture.large;
-
-    const contact = await createContact({ ...req.body, photoUrl });
+    const contact = await createContact(req.body);
     return res.status(201).location(`/contacts/${contact._id}`).json(contact);
   } catch (err) {
     return res.status(422).send(err);

@@ -1,51 +1,23 @@
 export const INITIAL_CONTACTS = [
   {
-    _id: "055f1aaa-aab0-4ff3-a709-85c28f1d397f",
-    name: "Luke Skywalker",
-    phoneNumber: "+1 555-000-1001",
-    funFact: "Has a green lightsaber in 'Return of the Jedi'.",
-    photoUrl: "https://randomuser.me/api/portraits/men/44.jpg"
+    _id: "10f7g8h9-1i2j-3k4l-5m6n-7o8p9q0r1s2t",
+    name: "Honey Princess",
+    phoneNumber: "555-9876",
+    funFact: "She rules the hive with kindness and a love for honey.",
+    photoUrl: "http://209.38.88.159:8081/images/avatars/avatar-001.jpeg"
   },
   {
-    _id: "5f90d372-7bdf-4b39-b621-cf6d3cd975f4",
-    name: "Hermione Granger",
-    phoneNumber: "+1 555-000-1002",
-    funFact: "Uses the Time-Turner in 'The Prisoner of Azkaban'.",
-    photoUrl: "https://randomuser.me/api/portraits/women/38.jpg"
+    _id: "20a1b2c3-d4e5-f6g7-h8i9-j0k1l2m3n4o5",
+    name: "Beach Buddy",
+    phoneNumber: "555-1234",
+    funFact: "Loves ice cream almost as much as building sandcastles.",
+    photoUrl: "http://209.38.88.159:8081/images/avatars/avatar-002.jpeg"
   },
   {
-    _id: "3b62658c-3c23-4bfc-812b-36b0c6076dd8",
-    name: "Katniss Everdeen",
-    phoneNumber: "+1 555-000-1019",
-    funFact: "Is known as the 'Girl on Fire'.",
-    photoUrl: "https://randomuser.me/api/portraits/women/83.jpg"
-  },
-  {
-    _id: "18fb9676-3c5b-4480-b8bc-4b9cc2f6ef28",
-    name: "Darth Vader",
-    phoneNumber: "+1 555-000-1004",
-    funFact: "Was originally a Jedi named Anakin Skywalker.",
-    photoUrl: "https://randomuser.me/api/portraits/men/35.jpg"
-  },
-  {
-    _id: "983c620f-6500-476f-a856-8791aac32794",
-    name: "Tony Stark",
-    phoneNumber: "+1 555-000-1005",
-    funFact: "Is the real name of Iron Man.",
-    photoUrl: "https://randomuser.me/api/portraits/men/68.jpg"
-  },
-  {
-    _id: "0e37df36-f698-41e4-8270-3b5ded18a4ff",
-    name: "Ellen Ripley",
-    phoneNumber: "+1 555-000-1012",
-    funFact: "Is the main character in the movie 'Alien'.",
-    photoUrl: "https://randomuser.me/api/portraits/women/89.jpg"
-  },
-  {
-    _id: "71b5ed07-9e1e-47d0-937a-64c396d5567b",
-    name: "Bruce Wayne",
-    phoneNumber: "+1 555-000-1007",
-    funFact: "Lives in Gotham City.",
-    photoUrl: "https://randomuser.me/api/portraits/men/91.jpg"
+    _id: "30b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6",
+    name: "Waitamata Dairy Cows Club",
+    phoneNumber: "555-5678",
+    funFact: "Loves web development, and grazing under sunny skies.",
+    photoUrl: "http://209.38.88.159:8081/images/avatars/avatar-004.webp"
   }
 ];
