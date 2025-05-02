@@ -4,14 +4,14 @@
     "name": "Luke Skywalker",
     "phoneNumber": "+1 555-000-1001",
     "funFact": "Has a green lightsaber in 'Return of the Jedi'.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/44.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/44.jpg"
   },
   {
     "_id": "5f90d372-7bdf-4b39-b621-cf6d3cd975f4",
     "name": "Hermione Granger",
     "phoneNumber": "+1 555-000-1002",
     "funFact": "Uses the Time-Turner in 'The Prisoner of Azkaban'.",
-    "photoUrl": "https://randomuser.me/api/portraits/men/38.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/women/38.jpg"
   },
   {
     "_id": "b8853e3f-38d1-4712-9071-8f62d71c19b8",
@@ -25,21 +25,21 @@
     "name": "Darth Vader",
     "phoneNumber": "+1 555-000-1004",
     "funFact": "Was originally a Jedi named Anakin Skywalker.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/35.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/35.jpg"
   },
   {
     "_id": "983c620f-6500-476f-a856-8791aac32794",
     "name": "Tony Stark",
     "phoneNumber": "+1 555-000-1005",
     "funFact": "Is the real name of Iron Man.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/68.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/68.jpg"
   },
   {
     "_id": "99fb1c56-98b3-41a9-b67b-580567495e86",
     "name": "Sherlock Holmes",
     "phoneNumber": "+1 555-000-1006",
     "funFact": "Plays the violin when he is thinking.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/59.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/59.jpg"
   },
   {
     "_id": "71b5ed07-9e1e-47d0-937a-64c396d5567b",
@@ -60,7 +60,7 @@
     "name": "Marty McFly",
     "phoneNumber": "+1 555-000-1009",
     "funFact": "Travels in time using a DeLorean.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/83.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/83.jpg"
   },
   {
     "_id": "e3f778de-494c-40d3-a60c-cd15f124b9b2",
@@ -74,28 +74,28 @@
     "name": "Harry Potter",
     "phoneNumber": "+1 555-000-1011",
     "funFact": "Is known as the Boy Who Lived.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/55.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/55.jpg"
   },
   {
     "_id": "0e37df36-f698-41e4-8270-3b5ded18a4ff",
     "name": "Ellen Ripley",
     "phoneNumber": "+1 555-000-1012",
     "funFact": "Is the main character in the movie 'Alien'.",
-    "photoUrl": "https://randomuser.me/api/portraits/men/89.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/women/89.jpg"
   },
   {
     "_id": "f84676e0-c6a5-4b0b-9ae6-ac3c54c0bfe7",
     "name": "Jack Sparrow",
     "phoneNumber": "+1 555-000-1013",
     "funFact": "Is a pirate captain in the Caribbean.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/39.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/39.jpg"
   },
   {
     "_id": "dafe7260-70d7-4499-85be-aee7da3879e3",
     "name": "Frodo Baggins",
     "phoneNumber": "+1 555-000-1014",
     "funFact": "Is the ring-bearer in 'The Lord of the Rings'.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/12.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/12.jpg"
   },
   {
     "_id": "56733c1b-f8c2-4d72-abe0-d533c2458c0f",
@@ -109,7 +109,7 @@
     "name": "Neo",
     "phoneNumber": "+1 555-000-1016",
     "funFact": "Is the One in 'The Matrix'.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/77.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/77.jpg"
   },
   {
     "_id": "9b124e27-bf31-4571-a834-a3d9ecce9264",
@@ -123,7 +123,7 @@
     "name": "Spock",
     "phoneNumber": "+1 555-000-1018",
     "funFact": "His home planet is Vulcan.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/78.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/78.jpg"
   },
   {
     "_id": "3b62658c-3c23-4bfc-812b-36b0c6076dd8",
@@ -144,7 +144,7 @@
     "name": "Tyler Durden",
     "phoneNumber": "+1 555-000-1021",
     "funFact": "Is a soap salesman and the narrator's alter ego.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/84.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/84.jpg"
   },
   {
     "_id": "8a56feb1-4c7d-4426-aefa-eb6e6063a9f2",
@@ -165,14 +165,14 @@
     "name": "Peter Parker",
     "phoneNumber": "+1 555-000-1024",
     "funFact": "Is also known as Spider-Man.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/42.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/42.jpg"
   },
   {
     "_id": "8bcf2093-58c1-403b-a350-3d422e999032",
     "name": "James Bond",
     "phoneNumber": "+1 555-000-1025",
     "funFact": "Is known by his code number, 007.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/33.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/33.jpg"
   },
   {
     "_id": "cbead8c9-c93d-4991-9303-2ef9f9789fe2",
@@ -186,35 +186,35 @@
     "name": "Rick Sanchez",
     "phoneNumber": "+1 555-000-1027",
     "funFact": "Is known for his interdimensional adventures.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/75.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/75.jpg"
   },
   {
     "_id": "f8f5e430-29ea-4a90-bb99-84c7388b27c1",
     "name": "Michael Scott",
     "phoneNumber": "+1 555-000-1028",
     "funFact": "Is the regional manager of Dunder Mifflin Scranton.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/82.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/82.jpg"
   },
   {
     "_id": "a6e9ac1f-db5b-4064-a599-1057f2dc5510",
     "name": "Jesse Pinkman",
     "phoneNumber": "+1 555-000-1029",
     "funFact": "Frequently says 'Yeah, science!' in 'Breaking Bad'.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/4.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/4.jpg"
   },
   {
     "_id": "b0a0b9b2-9225-4b25-9b7e-6f7f5e3b1736",
     "name": "Clarice Starling",
     "phoneNumber": "+1 555-000-1030",
     "funFact": "Is an FBI trainee in 'The Silence of the Lambs'.",
-    "photoUrl": "https://randomuser.me/api/portraits/men/53.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/women/53.jpg"
   },
   {
     "_id": "91d5be5e-9d75-4036-9638-320c1e957b59",
     "name": "Forrest Gump",
     "phoneNumber": "+1 555-000-1031",
     "funFact": "Says 'Life is like a box of chocolates.'",
-    "photoUrl": "https://randomuser.me/api/portraits/women/17.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/17.jpg"
   },
   {
     "_id": "54e8a140-a849-4342-97ae-1acd9ae3d3c3",
@@ -228,49 +228,49 @@
     "name": "Hannibal Lecter",
     "phoneNumber": "+1 555-000-1033",
     "funFact": "Is a cannibalistic psychiatrist.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/40.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/40.jpg"
   },
   {
     "_id": "1c843e4c-41ca-4ac3-b921-908c5fd5c530",
     "name": "Mulder",
     "phoneNumber": "+1 555-000-1034",
     "funFact": "Believes 'The truth is out there' in 'The X-Files'.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/38.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/38.jpg"
   },
   {
     "_id": "3f544e55-0932-4d70-abad-a29c7de3edec",
     "name": "Scully",
     "phoneNumber": "+1 555-000-1035",
     "funFact": "Is a medical doctor and Mulder's partner in 'The X-Files'.",
-    "photoUrl": "https://randomuser.me/api/portraits/men/80.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/women/80.jpg"
   },
   {
     "_id": "ec0aaaf5-2d7e-4c0a-90d8-2900a171c55b",
     "name": "Tyrion Lannister",
     "phoneNumber": "+1 555-000-1036",
     "funFact": "Is known for his wit and love of wine.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/15.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/15.jpg"
   },
   {
     "_id": "53bb3a80-f265-436f-81c7-ecb5d79596c1",
     "name": "Elizabeth Bennet",
     "phoneNumber": "+1 555-000-1037",
     "funFact": "Is the protagonist of 'Pride and Prejudice'.",
-    "photoUrl": "https://randomuser.me/api/portraits/men/25.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/women/25.jpg"
   },
   {
     "_id": "4e93cbb5-1173-4a72-aff4-f6f2f3f153c1",
     "name": "Bruce Banner",
     "phoneNumber": "+1 555-000-1038",
     "funFact": "Turns into the Hulk when he is angry.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/32.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/32.jpg"
   },
   {
     "_id": "45ef1318-07c4-4c5f-ba8b-8d2d3d285b99",
     "name": "Don Draper",
     "phoneNumber": "+1 555-000-1039",
     "funFact": "Is a creative director in 'Mad Men'.",
-    "photoUrl": "https://randomuser.me/api/portraits/women/84.jpg"
+    "photoUrl": "https://randomuser.me/api/portraits/men/84.jpg"
   },
   {
     "_id": "c4f7fc8a-0a58-49ea-abde-a4bf8283dc78",
