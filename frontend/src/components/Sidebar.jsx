@@ -9,6 +9,12 @@ import { useContacts } from "../context/ContactsContextProvider";
  */
 export default function Sidebar({ onAddButtonClick }) {
   const { contacts, selectedContact, setSelectedContact } = useContacts();
+  const [searchTerm, setSearchTerm] = useState("");
+
+  // Function to filter contacts based on search term
+  const filteredContacts = contacts.filter((contact) => {
+    return contact.name.toLowerCase().includes(searchTerm.toLowerCase());
+  });
 
   const [searchTerm, setSearchTerm] = useState("");
 
