@@ -1,10 +1,13 @@
 import { getPhotoUrl } from "../util/image-utils";
+import { useContacts } from "../context/ContactsContextProvider";
 
 /* eslint-disable react/prop-types */
 /**
  * The main application area; displays detailed info about a single contact.
  */
-export default function ContactDisplay({ selectedContact }) {
+export default function ContactDisplay() {
+  const { selectedContact } = useContacts();
+
   if (!selectedContact) return <div>No friend selected</div>;
 
   const { name, phoneNumber, funFact, photoUrl } = selectedContact;

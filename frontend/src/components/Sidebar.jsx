@@ -1,12 +1,19 @@
 import ContactListItem from "./ContactListItem";
 import AddContactButton from "./AddContactButton";
+import { useContacts } from "../context/ContactsContextProvider";
 
 /**
  * A sidebar with links to view each contact, or add new contacts.
  *
  * The contacts list can be filtered by name.
  */
-export default function Sidebar({ contacts, onContactClicked, selectedContact }) {
+export default function Sidebar() {
+  const { contacts, selectedContact, setSelectedContact } = useContacts();
+
+  function handleContactClicked(contact) {
+    setSelectedContact(contact);
+  }
+
   return (
     <nav className="side-bar">
       {/* Search box */}
@@ -22,7 +29,7 @@ export default function Sidebar({ contacts, onContactClicked, selectedContact })
             <ContactListItem
               key={contact._id}
               contact={contact}
-              onClick={onContactClicked}
+              onClick={handleContactClicked}
               isActive={contact === selectedContact}
             />
           ))}
