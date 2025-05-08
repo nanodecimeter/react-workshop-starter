@@ -1,15 +1,16 @@
 import ContactDisplay from "./components/ContactDisplay";
 import Sidebar from "./components/Sidebar";
+import { INITIAL_CONTACTS } from "./data/initial-contacts";
 
 export default function App() {
   return (
     <>
       {/* Sidebar (nav) */}
-      <Sidebar />
+      <Sidebar contacts={INITIAL_CONTACTS} />
 
       <main className="main-area">
         {/* TODO Contact display goes here */}
-        <ContactDisplay />
+        <ContactDisplay selectedContact={INITIAL_CONTACTS[0]} />
 
         {/* Buttons for editing / deleting selected contact */}
         <section style={{ display: "flex", gap: "1rem" }}>

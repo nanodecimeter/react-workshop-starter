@@ -1,16 +1,19 @@
-import { DEFAULT_IMAGE } from "../util/image-utils";
+import { getPhotoUrl } from "../util/image-utils";
 
 /* eslint-disable react/prop-types */
 /**
  * The main application area; displays detailed info about a single contact.
  */
-export default function ContactDisplay() {
+export default function ContactDisplay({ selectedContact }) {
+  if (!selectedContact) return <div>No friend selected</div>;
+
+  const { name, phoneNumber, funFact, photoUrl } = selectedContact;
   return (
     <section className="contact-display">
-      <img src={DEFAULT_IMAGE} alt={`Portrait`} />
-      <h1>Contact Name</h1>
-      <h3>555-1234</h3>
-      <p>Fun Fact: This is dummy data.</p>
+      <img src={getPhotoUrl(photoUrl)} alt={`${name} portrait`} />
+      <h1>{name}</h1>
+      {phoneNumber && <h3>{phoneNumber}</h3>}
+      {funFact && <p>Fun Fact: {funFact}</p>}
     </section>
   );
 }
