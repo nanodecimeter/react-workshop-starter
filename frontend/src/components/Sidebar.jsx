@@ -10,6 +10,13 @@ import { useContacts } from "../context/ContactsContextProvider";
 export default function Sidebar({ onAddButtonClick }) {
   const { contacts, selectedContact, setSelectedContact } = useContacts();
 
+  const [searchTerm, setSearchTerm] = useState("");
+
+  // Function to filter contacts based on search term
+  const filteredContacts = contacts.filter((contact) => {
+    return contact.name.toLowerCase().includes(searchTerm.toLowerCase());
+  });
+
   function handleContactClicked(contact) {
     setSelectedContact(contact);
   }
@@ -19,13 +26,13 @@ export default function Sidebar({ onAddButtonClick }) {
       {/* Search box */}
       <header>
         <h2>Friends</h2>
-        <input type="text" />
+        <input type="text" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
       </header>
 
       {/* List of contacts */}
       <section>
         <ul>
-          {contacts?.map?.((contact) => (
+          {filteredContacts?.map?.((contact) => (
             <ContactListItem
               key={contact._id}
               contact={contact}
