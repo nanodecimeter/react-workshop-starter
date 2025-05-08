@@ -15,14 +15,14 @@ In this step, we'll build out the basic HTML and CSS of our app, currently with 
 
 ### Step 02 - Props
 
-In this step, instead of hardcoding all values, we'll supply some data to our components, as *props*. We'll also show how we can iterate through a JavaScript array, and display a list of HTML elements based on the objects in that array.
+In this step, instead of hardcoding all values, we'll supply some data to our components, as _props_. We'll also show how we can iterate through a JavaScript array, and display a list of HTML elements based on the objects in that array.
 
 - [Gist link](https://gist.github.com/andrew-meads/284dbf2e5e6cb0f463985399ff9865da)
 - Completed branch name: `steps/02-props`
 
 ### Step 03 - State & Event handling
 
-In this step, we'll add functionality so that when we click on a contact in the sidebar, the main contact view will update to match the selected contact. To do this we'll need to keep track of which contact is currently selected (*application state*), and also respond to the user clicking on our list items (*event handling*).
+In this step, we'll add functionality so that when we click on a contact in the sidebar, the main contact view will update to match the selected contact. To do this we'll need to keep track of which contact is currently selected (_application state_), and also respond to the user clicking on our list items (_event handling_).
 
 - [Gist link](https://gist.github.com/andrew-meads/8801b7357d44e1252ad6745edab4b8e9)
 - Completed branch name: `steps/03-state-events`
@@ -36,4 +36,4 @@ Already in the last step, it became obvious that for any non-trivial "global" st
 
 ### Step 05 - "Edit" form
 
-In this step, we'll add a modal (popup) dialog, containing an HTML form allowing users to edit a contact's details. In doing so, we will show how
+In this step, we'll add a modal (popup) dialog, containing an HTML form allowing users to edit a contact's details. In doing so, we will show how to "bind" form inputs to stateful values. We'll do the same thing with the "search" bar on the sidebar, to enable search functionality.
