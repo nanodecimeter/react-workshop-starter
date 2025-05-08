@@ -30,7 +30,7 @@ export default function Sidebar() {
               key={contact._id}
               contact={contact}
               onClick={handleContactClicked}
-              isActive={contact === selectedContact}
+              isActive={contact._id === selectedContact?._id}
             />
           ))}
         </ul>

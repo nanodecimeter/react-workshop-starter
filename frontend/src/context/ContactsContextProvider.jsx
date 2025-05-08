@@ -28,11 +28,31 @@ export default function ContactsContextProvider({ children }) {
   // Function for deleting a contact
   async function deleteContact(id) {
     console.log("Deleting contact with id:", id);
+    try {
+      await api.deleteContact(id);
+      setContacts((prevContacts) => prevContacts.filter((contact) => contact._id !== id));
+      setSelectedContact(null); // Deselect the contact after deletion
+    } catch (err) {
+      // TODO Proper error handling
+      console.error("Error deleting contact:", err.response.status);
+    }
   }
 
   // Function for editing a contact
   async function editContact(contact) {
     console.log("Editing contact:", contact);
+    try {
+      await api.updateContact(contact);
+      setContacts((prevContacts) =>
+        prevContacts.map((c) => (c._id === contact._id ? { ...c, ...contact } : c))
+      );
+      if (selectedContact && selectedContact._id === contact._id) {
+        setSelectedContact({ ...selectedContact, ...contact });
+      }
+    } catch (err) {
+      // TODO Proper error handling
+      console.error("Error editing contact:", err.response.status);
+    }
   }
 
   const context = {
