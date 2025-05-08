@@ -2,6 +2,18 @@
 
 In addition to the source code in this starter project, we'll also be using [gists](https://docs.github.com/en/get-started/writing-on-github/editing-and-sharing-content-with-gists/creating-gists) to share code during the session.
 
+Remember, before you start, **in the [frontend](./frontend/) folder**, run the following command to install dependencies:
+
+```sh
+npm install
+```
+
+Then, run this to start development:
+
+```sh
+npm run dev
+```
+
 ## Steps
 
 We'll be going through the following steps in this demo. It's likely that not all of these steps will be completed during the demo itself, but you can find the "end-point" for each of these steps on a particular branch in this repository.
@@ -37,3 +49,43 @@ Already in the last step, it became obvious that for any non-trivial "global" st
 ### Step 05 - "Edit" form
 
 In this step, we'll add a modal (popup) dialog, containing an HTML form allowing users to edit a contact's details. In doing so, we will show how to "bind" form inputs to stateful values. We'll do the same thing with the "search" bar on the sidebar, to enable search functionality.
+
+- [Gist link](https://gist.github.com/andrew-meads/a61f4f8968be37731113f24e34bdaffa)
+- Completed branch name: `steps/05-edit-form`
+
+### Step 06 - Fetching data
+
+In this step, we'll look at how we can fetch our contacts data from an external API, using `fetch()`. We have provided a backend (in the [backend](./backend/) folder) which you can run with the following commands (_in that folder_):
+
+```sh
+npm install
+npm run dev
+```
+
+- [Gist link](https://gist.github.com/andrew-meads/8db93ec5e1c3517de3d649ee6cd39feb)
+- Completed branch name: `steps/06-fetch`
+
+### Step 07 - Completing the "edit" and "delete" functionality
+
+In this step, we'll complete the above functionality by adding more API calls, and modifying our contacts state based on the results.
+
+- [Gist link](https://gist.github.com/andrew-meads/181d6faf904226dc33f7c3155514db58)
+- Completed branch name: `steps/07-edit-delete`
+
+### Step 08 - Adding new contacts
+
+Finally, we'll complete the "add contact" feature, which will require everything we've learned in the demo:
+
+- Responding to users clicking the "add contact" button
+- Creating a new popup for adding contacts
+- Showing / hiding the popup based on application state
+- Sending new contact data to our API and dealing with the response
+
+- [Gist link](https://gist.github.com/andrew-meads/a7401f2b6fb054b52571843505b46407)
+- Completed branch name: `steps/08-complete`
+
+### Further steps: Up to you!
+
+You now have the basics of a contacts app - both frontend and backend - up and running! In our next workshop, we'll look at adding a database, and deploying our app.
+
+There are _so many ways_ you could extend this app if you so choose - we encourage you to experiment and make it your own!
