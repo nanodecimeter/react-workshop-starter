@@ -16,13 +16,6 @@ export default function Sidebar({ onAddButtonClick }) {
     return contact.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
-  const [searchTerm, setSearchTerm] = useState("");
-
-  // Function to filter contacts based on search term
-  const filteredContacts = contacts.filter((contact) => {
-    return contact.name.toLowerCase().includes(searchTerm.toLowerCase());
-  });
-
   function handleContactClicked(contact) {
     setSelectedContact(contact);
   }
