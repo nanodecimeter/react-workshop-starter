@@ -17,14 +17,22 @@ export default function ContactsContextProvider({ children }) {
 
   // TODO Function for adding a new contact
 
-  // TODO Function for deleting a contact
+  // Function for deleting a contact
+  async function deleteContact(id) {
+    console.log("Deleting contact with id:", id);
+  }
 
-  // TODO Function for editing a contact
+  // Function for editing a contact
+  async function editContact(contact) {
+    console.log("Editing contact:", contact);
+  }
 
   const context = {
     contacts,
     selectedContact,
-    setSelectedContact
+    setSelectedContact,
+    deleteContact,
+    editContact
   };
 
   return <ContactsContext.Provider value={context}>{children}</ContactsContext.Provider>;
