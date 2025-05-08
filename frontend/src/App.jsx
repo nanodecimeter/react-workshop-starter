@@ -1,12 +1,18 @@
-import styles from "./App.module.css";
-
 export default function App() {
-
   return (
     <>
-      <div className={styles.container}>
+      {/* TODO Add sidebar here */}
+
+      <main className="main-area">
+        {/* TODO Contact display goes here */}
         <h1>Hello, WDCC! 🐮💻</h1>
-      </div>
+
+        {/* TODO Edit / Delete buttons section goes here */}
+      </main>
+
+      {/* TODO Modal for adding new contacts */}
+
+      {/* TODO Modal for editing existing contacts */}
     </>
   );
 }
