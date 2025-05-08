@@ -1,5 +1,5 @@
-import { useContext, createContext, useState } from "react";
-import { INITIAL_CONTACTS } from "../data/initial-contacts";
+import { useContext, createContext, useState, useEffect } from "react";
+import * as api from "../api/api.js";
 
 const ContactsContext = createContext();
 
@@ -8,12 +8,20 @@ export function useContacts() {
 }
 
 export default function ContactsContextProvider({ children }) {
-  const [contacts, setContacts] = useState(INITIAL_CONTACTS);
-  const [selectedContact, setSelectedContact] = useState(INITIAL_CONTACTS[0]);
+  const [contacts, setContacts] = useState([]);
+  const [selectedContact, setSelectedContact] = useState(null);
 
-  // TODO Fetch contacts from server
+  // Fetch contacts from server
+  async function fetchContacts() {
+    const data = await api.retrieveContacts();
+    setContacts(data);
+    setSelectedContact(data[0]);
+  }
 
   // TODO On initial page mount, fetch contacts.
+  useEffect(() => {
+    fetchContacts();
+  }, []);
 
   // TODO Function for adding a new contact
 
