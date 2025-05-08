@@ -24,6 +24,17 @@ export default function ContactsContextProvider({ children }) {
   }, []);
 
   // TODO Function for adding a new contact
+  async function addContact(contact) {
+    console.log("Adding contact:", contact);
+    try {
+      const newContact = await api.createContact(contact);
+      setContacts((prevContacts) => [...prevContacts, newContact]);
+      setSelectedContact(newContact); // Select the newly added contact
+    } catch (err) {
+      // TODO Proper error handling
+      console.error("Error adding contact:", err.response.status);
+    }
+  }
 
   // Function for deleting a contact
   async function deleteContact(id) {
@@ -60,7 +71,8 @@ export default function ContactsContextProvider({ children }) {
     selectedContact,
     setSelectedContact,
     deleteContact,
-    editContact
+    editContact,
+    addContact
   };
 
   return <ContactsContext.Provider value={context}>{children}</ContactsContext.Provider>;

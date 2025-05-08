@@ -1,9 +1,9 @@
 /**
  * A card / link to appear on the sidebar. When clicked, will allow users to add contacts.
  */
-export default function AddContactButton() {
+export default function AddContactButton(props) {
   return (
-    <button className="add-contact-button">
+    <button className="add-contact-button" {...props}>
       {/* Icon */}
       <svg
         width="50px"

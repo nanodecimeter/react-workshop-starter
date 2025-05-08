@@ -7,7 +7,7 @@ import { useContacts } from "../context/ContactsContextProvider";
  *
  * The contacts list can be filtered by name.
  */
-export default function Sidebar() {
+export default function Sidebar({ onAddButtonClick }) {
   const { contacts, selectedContact, setSelectedContact } = useContacts();
 
   function handleContactClicked(contact) {
@@ -38,7 +38,7 @@ export default function Sidebar() {
 
       {/* Add contact button */}
       <footer>
-        <AddContactButton />
+        <AddContactButton onClick={onAddButtonClick} />
       </footer>
     </nav>
   );

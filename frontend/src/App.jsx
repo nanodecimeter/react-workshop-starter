@@ -1,17 +1,19 @@
 import { useState } from "react";
 import ContactDisplay from "./components/ContactDisplay";
 import Sidebar from "./components/Sidebar";
+import AddContactModal from "./components/AddContactModal";
 import EditContactModal from "./components/EditContactModal";
 import { useContacts } from "./context/ContactsContextProvider";
 
 export default function App() {
+  const [isAddContactVisible, setAddContactVisible] = useState(false);
   const [isEditContactVisible, setEditContactVisible] = useState(false);
   const { selectedContact, deleteContact } = useContacts();
 
   return (
     <>
       {/* Sidebar (nav) */}
-      <Sidebar />
+      <Sidebar onAddButtonClick={() => setAddContactVisible(true)} />
 
       <main className="main-area">
         {/* TODO Contact display goes here */}
@@ -28,7 +30,8 @@ export default function App() {
         </section>
       </main>
 
-      {/* TODO Modal for adding new contacts */}
+      {/* Modal for adding new contacts */}
+      <AddContactModal visible={isAddContactVisible} onClose={() => setAddContactVisible(false)} />
 
       {/* Modal for editing existing contacts */}
       <EditContactModal
