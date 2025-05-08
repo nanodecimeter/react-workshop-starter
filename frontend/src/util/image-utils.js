@@ -1,3 +1,5 @@
+export const DEFAULT_IMAGE = "https://th.bing.com/th/id/OIP.PoS7waY4-VeqgNuBSxVUogAAAA?rs=1&pid=ImgDetMain";
+
 /**
  * Gets the photo URL of a contact.
  * If the contact has a photoUrl, it will be returned.
@@ -12,7 +14,7 @@ export function getPhotoUrl(photoUrl) {
     if (photoUrl.startsWith("http")) return photoUrl;
     return import.meta.env.VITE_IMAGE_BASE_URL + photoUrl;
   }
-  return "https://th.bing.com/th/id/OIP.PoS7waY4-VeqgNuBSxVUogAAAA?rs=1&pid=ImgDetMain";
+  return DEFAULT_IMAGE;
 }
 
 // All valid avatar / contact images.
