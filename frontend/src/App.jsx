@@ -1,4 +1,4 @@
-import { DEFAULT_IMAGE } from "./util/image-utils";
+import ContactDisplay from "./components/ContactDisplay";
 
 export default function App() {
   return (
@@ -7,12 +7,7 @@ export default function App() {
 
       <main className="main-area">
         {/* TODO Contact display goes here */}
-        <section className="contact-display">
-          <img src = {DEFAULT_IMAGE}/>
-          <h1>Contanct name goes here</h1>
-          <h3>555-1234</h3>
-          <p>Fun Fact: This is some dummy data</p>
-        </section>
+        <ContactDisplay />
 
 
         {/* TODO Edit / Delete buttons section goes here */}
