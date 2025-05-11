@@ -1,13 +1,17 @@
+
 import ContactDisplay from "./components/ContactDisplay";
+import Sidebar from "./components/Sidebar";
+import {INITIAL_CONTACTS} from "./data/initial-contacts";
 
 export default function App() {
   return (
     <>
       {/* TODO Add sidebar here */}
+      <Sidebar></Sidebar>
 
       <main className="main-area">
         {/* TODO Contact display goes here */}
-        <ContactDisplay />
+        <ContactDisplay contact = {INITIAL_CONTACTS[1]}/>
 
 
         {/* TODO Edit / Delete buttons section goes here */}

@@ -1,13 +1,16 @@
-import { DEFAULT_IMAGE } from "../util/image-utils"
+import { getPhotoUrl } from "../util/image-utils";
 
-export default function ContactDisplay(){
+export default function ContactDisplay(props){
+
+    const contact = props.contact;
+    // console.log(contact);
     return(
         <>
         <section className="contact-display">
-            <img src = {DEFAULT_IMAGE}/>
-            <h1>Contanct name goes here</h1>
-            <h3>555-1234</h3>
-            <p>Fun Fact: This is compontesied</p>
+            <img src = {getPhotoUrl(contact.photoUrl)}/>
+            <h1>{contact.name}</h1>
+            <h3>{contact.phoneNumber}</h3>
+            <p>Fun Fact: {contact.funFact}</p>
         </section>
         </>
     )
