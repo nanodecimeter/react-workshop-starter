@@ -7,9 +7,6 @@ import AddContactButton from "./AddContactButton";
  * The contacts list can be filtered by name.
  */
 export default function Sidebar({contacts}) {
-
-    const contactListItems = contacts.map((contact) => (
-    <ContactListItem key={contact._id} contact = {contact}/>));
             
 
   return (
@@ -23,7 +20,8 @@ export default function Sidebar({contacts}) {
       {/* List of contacts */}
       <section>
         <ul>
-            {contactListItems}
+            {contacts.map((contact) => (
+    <ContactListItem key={contact._id} contact = {contact}/>))}
         </ul>
       </section>
 
