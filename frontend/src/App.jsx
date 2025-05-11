@@ -7,11 +7,11 @@ export default function App() {
   return (
     <>
       {/* TODO Add sidebar here */}
-      <Sidebar></Sidebar>
+      <Sidebar contacts={INITIAL_CONTACTS}/>
 
       <main className="main-area">
         {/* TODO Contact display goes here */}
-        <ContactDisplay contact = {INITIAL_CONTACTS[1]}/>
+        <ContactDisplay contact = {INITIAL_CONTACTS[2]}/>
 
 
         {/* TODO Edit / Delete buttons section goes here */}
