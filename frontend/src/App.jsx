@@ -11,6 +11,10 @@ export default function App() {
 
 
         {/* TODO Edit / Delete buttons section goes here */}
+        <section style = {{display: "flex", gap: "1rem"}}>
+          <button className="button"> Edit </button>
+          <button className="button red"> Delete </button>
+        </section>
       </main>
 
       {/* TODO Modal for adding new contacts */}
