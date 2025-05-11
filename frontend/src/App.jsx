@@ -2,16 +2,26 @@
 import ContactDisplay from "./components/ContactDisplay";
 import Sidebar from "./components/Sidebar";
 import {INITIAL_CONTACTS} from "./data/initial-contacts";
+import { useState } from "react";
 
 export default function App() {
+
+ const [selectedContact, setSelectedContact] = useState(INITIAL_CONTACTS[0]);
+
+  console.log("Selected contact: ", selectedContact);
+
+   function handleContactClicked(contact) {
+    setSelectedContact(contact);
+  }
+
   return (
     <>
       {/* TODO Add sidebar here */}
-      <Sidebar contacts={INITIAL_CONTACTS}/>
+      <Sidebar contacts={INITIAL_CONTACTS} onContactClicked={handleContactClicked} selectedContact={selectedContact}/>
 
       <main className="main-area">
         {/* TODO Contact display goes here */}
-        <ContactDisplay contact = {INITIAL_CONTACTS[2]}/>
+        <ContactDisplay selectedContact={selectedContact} />
 
 
         {/* TODO Edit / Delete buttons section goes here */}

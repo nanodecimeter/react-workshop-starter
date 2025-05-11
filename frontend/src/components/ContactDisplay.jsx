@@ -1,7 +1,7 @@
 import { getPhotoUrl } from "../util/image-utils";
 
-export default function ContactDisplay({contact}){
-
+export default function ContactDisplay({selectedContact: contact}){
+    console.log("ContactDisplay", contact);
     const {name, phoneNumber, funFact, photoUrl} = contact;
 
     return(
