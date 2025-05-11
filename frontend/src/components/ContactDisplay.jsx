@@ -1,9 +1,7 @@
 import { getPhotoUrl } from "../util/image-utils";
 
-export default function ContactDisplay(props){
+export default function ContactDisplay({contact}){
 
-    const contact = props.contact;
-    // console.log(contact);
     return(
         <>
         <section className="contact-display">
