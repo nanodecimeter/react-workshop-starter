@@ -1,8 +1,13 @@
+import { useContacts } from "../context/ContactsContextProvider";
 import { getPhotoUrl } from "../util/image-utils";
 
-export default function ContactDisplay({selectedContact: contact}){
-    console.log("ContactDisplay", contact);
-    const {name, phoneNumber, funFact, photoUrl} = contact;
+export default function ContactDisplay(){
+    const {selectedContact} = useContacts();
+
+    if (!selectedContact) return <div>No friend selected</div>;
+
+
+    const {name, phoneNumber, funFact, photoUrl} = selectedContact;
 
     return(
         <>

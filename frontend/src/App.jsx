@@ -21,7 +21,7 @@ export default function App() {
 
       <main className="main-area">
         {/* TODO Contact display goes here */}
-        <ContactDisplay selectedContact={selectedContact} />
+        <ContactDisplay/>
 
 
         {/* TODO Edit / Delete buttons section goes here */}
